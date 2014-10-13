@@ -1,0 +1,60 @@
+body{
+	overflow: hidden;
+	background-color: #979384;
+}
+.user{
+	padding-right: 50px;
+	padding-top: 50px;
+	float: right;
+	width: 250px;
+}
+.frist{
+	cursor: pointer;
+	display: inline-block;
+	width: 30px ;
+	height: 500px;
+	background-color: #000;
+}
+.mes{
+	position: fixed;
+	left:0px;
+	color: #fff;
+	font-size: 25px;
+}
+.frist[on="yes"]{
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.last[on="yes"]{
+	background-color: rgba(255, 255, 255, 0.5)
+}
+.last{
+	cursor: pointer;
+	display: inline-block;
+	width: 30px ;
+	height: 500px;
+	background-color: #fff;
+}
+.user ul{
+	list-style: none;
+}
+.user input{
+	cursor: pointer;
+}
+.game{
+	display: none;
+	margin-top: 50px;
+	margin-left: 100px;
+	float: left;
+	width: 600px;
+}
+canvas{
+	cursor: pointer;
+}
+form{
+	margin-top: 10px;
+	margin-left: 200px;
+	position: absolute;
+}
+.come{
+	float: right;
+}

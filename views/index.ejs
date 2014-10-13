@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	   	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	   	<title>five</title>
+        <link rel="stylesheet" href="reset.css" type="text/css" media="screen"/>
+	   	<link rel="stylesheet" href="five.css" type="text/css" media="screen"/>
+    </head>
+    <body>
+        <div class="game">
+            <div class="frist" on="no"></div>
+            <canvas id="five" height="500" width="500"></canvas>
+            <div class="last"  on="no"></div>
+            <p>先手点击黑色，后手点击白色，有人变透明</p>
+        </div>
+    	<form method="post" action="/">
+    		<input type="text" name="user"  value="">
+    		<input type="password" name="password"  value="">
+    		<input type="submit" value="登录">
+            <span> 
+                <%=welcome %>
+            </span>
+    	</form>
+        <div class="user" on=<%=username%> >
+           <ul>
+            <% for(var i=0; i<users.length; i++) { %>
+               <li>  
+                    <span><%=users[i].fen %></span>
+                    <span class="name"><%=users[i].name %></span>
+              </li>
+              <% } %>
+             </ul>  
+             <p class="mes"></p>
+        </div>
+    </body>
+    <script type="text/javascript" src="jquery_1.11_min.js"></script>
+    <script type="text/javascript" src="five.js"></script>
+</html>
